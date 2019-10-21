@@ -8,7 +8,7 @@ const setDate = () => {
   const now = new Date();
   const sec = deg(now.getSeconds());
   const min = deg(now.getMinutes());
-  const hour = deg(now.getHours()/60*12);
+  const hour = deg(now.getHours()*60/12);
   console.log(hour, min, sec);
 
   secHand.style.transform = `rotate(${sec}deg)`;
